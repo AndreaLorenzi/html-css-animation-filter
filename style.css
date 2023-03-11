@@ -135,3 +135,34 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: move 2s linear;
+}
+
+@keyframes move{
+    0%{
+        left: 20%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-2 2s linear;
+}
+@keyframes move-2{
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+} 
